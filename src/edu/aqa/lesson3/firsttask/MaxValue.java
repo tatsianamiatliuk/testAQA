@@ -1,4 +1,4 @@
-package edu.aqa.lesson3;
+package edu.aqa.lesson3.firsttask;
 
 public class MaxValue {
     public static void main(String[] args) {
