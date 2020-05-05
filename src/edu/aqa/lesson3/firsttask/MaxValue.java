@@ -8,9 +8,9 @@ public class MaxValue {
         int number;
 
         Manipulator manipulator = new Manipulator();
-        number = manipulator.generateNumber();
+        number = Manipulator.generateNumber();
         System.out.println("Value = " + number);
-        max = manipulator.maxValue(manipulator.parse(number));
+        max = Manipulator.maxValue(Manipulator.parse(number));
         System.out.println("maxValue = " + max);
     }
 }
