@@ -35,7 +35,7 @@ public class Accountancy {
         for (int i = 0; i < countDep; i++) {
             for (int j = 0; j < countEmpl; j++) {
                 sumSalary += arrayEmployees[i][j].getSalary()[month];
-                System.out.print("Employee " + arrayEmployees[i][j].getEmployeeFirstName() + " earned | " + arrayEmployees[i][j].getSalary()[month] + "\n");
+                System.out.print("Employee " + arrayEmployees[i][j].getEmployeeFirstName() + " from department \""+departments[i].getDepartmentName()+ "\" earned | " + arrayEmployees[i][j].getSalary()[month] + "\n");
             }
         }
 
