@@ -1,19 +1,28 @@
 package edu.aqa.lesson3.secondtask;
 
-public class Department extends Company {
-    private String departmentName, departmentLocation;
 
-    public Department (String CompName, String depName, String depLocation){
-        super(CompName);
+public class Department{
+    private String departmentName;
+    private Employee[] employees;// = new Employee[]{new Employee("Tania","Miatliuk", 100), new Employee("Ivan","Ivanov", 150),new Employee("Petr","Petriv", 160)};
+
+    public Department (String depName){
         this.departmentName = depName;
-        this.departmentLocation = depLocation;
     }
 
-    public String getDepartmentLocation() {
-        return departmentLocation;
+    public void setEmployees(Employee[] employees) {
+        this.employees = employees;
     }
 
     public String getDepartmentName() {
         return departmentName;
+    }
+
+    public int sumSalary(){
+        int sum;
+        sum = 0;
+        for (Employee employee : employees){
+            sum += employee.getSalary();
+        }
+        return sum;
     }
 }
